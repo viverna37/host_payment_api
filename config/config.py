@@ -29,7 +29,7 @@ class Api:
 
 @dataclass
 class Config:
- db: DbConfig
+    db: DbConfig
     yookassa: YooKassa
     api: Api
 
