@@ -11,7 +11,7 @@ class Clients(Base):
     telegram_id = Column(BigInteger, unique=True)
     full_name = Column(Text)
     status = Column(Text, default="active")
-    phone_number = Column(Text, default=0)
+    phone_number = Column(Text, default=None)
 
     created_at = Column(DateTime, default=datetime.utcnow)
 
